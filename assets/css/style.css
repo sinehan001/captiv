@@ -225,7 +225,7 @@ ul {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 12px;
 }
 
@@ -359,24 +359,13 @@ ul {
     border-bottom: 1px solid #ccc;
 }
 
-.active-bar {
-    background-color: gray;
-    position: absolute;
-    top: auto;
-    bottom: 0;
-    height: 0;
-    border-left: 3px solid #004dff;
-    /* Add this line to set the initial height to 0 */
-    transition: top 0.3s, height 0.3s;
-    /* Add the "top" property to the transition */
-}
-
 .item-content {
     margin-left: 10px;
 }
 
 .list-container li.active {
     background-color: #f0f0f0;
+    border-left: 3px solid #004dff;
     color: #004dff;
 }
 

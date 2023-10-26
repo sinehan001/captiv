@@ -191,97 +191,34 @@ searchInput.addEventListener('input', function() {
 });
 
 
-// sidebar js
-function setActive(index) {
-    const infoContainer = document.querySelector('.information-container');
-    const listItems = infoContainer.querySelectorAll('li');
-    const activeBar = document.querySelector('.active-bar');
+const navLinks = document.querySelectorAll('.list-container li');
+const sections = document.querySelectorAll('.section-content');
 
-    const selectedItem = listItems[index - 1];
-    const barTop = selectedItem.offsetTop;
-    const barHeight = selectedItem.clientHeight;
+navLinks.forEach(link => {
+    link.addEventListener('click', event => {
+        event.preventDefault();
+        const targetId = link.getAttribute('href').slice(1);
+        const targetSection = document.getElementById(targetId);
+        targetSection.scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
 
-    listItems.forEach((item, i) => {
-        if (i === index - 1) {
-            item.classList.add('active');
-        } else {
-            item.classList.remove('active');
+window.addEventListener('scroll', () => {
+    let currentSection = '';
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (scrollY >= sectionTop - sectionHeight / 2) {
+            currentSection = section.getAttribute('id');
         }
     });
 
-    activeBar.style.top = `${barTop}px`;
-    activeBar.style.height = `${barHeight}px`;
-
-    //side navbar to show the place
-
-    // var navbarHeight = document.querySelector('.navbar').offsetHeight;
-    // var targetSection = document.getElementById('section' + index);
-
-    // if (targetSection) {
-    //     var offset = targetSection.getBoundingClientRect().top - navbarHeight;
-    //     window.scrollTo({
-    //         top: offset,
-    //         behavior: 'smooth'
-    //     });
-    // }
-}
-
-// Set "Item 1" as the default active item when the page loads
-setActive(1);
-
-
-// $.fn.isInViewport = function() {
-//     let elementTop = $(this).offset().top;
-//     let elementBottom = elementTop + $(this).outerHeight();
-
-//     let viewportTop = $(window).scrollTop();
-//     let viewportBottom = viewportTop + $(window).height();
-
-//     return elementBottom > viewportTop && elementTop < viewportBottom;
-// };
-
-
-// let sectionIds = [];
-// let section_select = -1;
-// var sections = document.querySelectorAll('.section-content');
-
-// $(document).ready(function() {
-//     sections.forEach(function(section) {
-//         sectionIds.push(section.id);
-//     });
-// })
-
-// if (active_section) {
-//     $(window).scroll(function() {
-
-//         sections.forEach(function(section) {
-//             if ($(section).isInViewport()) {
-//                 if (section_select == -1) {
-//                     section_select = Number((section.id).replace("section", ""));
-//                 }
-//             }
-//         });
-
-//         const infoContainer = document.querySelector('.information-container');
-//         const listItems = infoContainer.querySelectorAll('li');
-//         listItems.forEach((item, i) => {
-//             if (i === section_select - 1) {
-//                 item.classList.add('active');
-//             } else {
-//                 item.classList.remove('active');
-//             }
-//         });
-
-//         const activeBar = document.querySelector('.active-bar');
-
-//         const selectedItem = listItems[section_select - 1];
-//         const barTop = selectedItem.offsetTop;
-//         const barHeight = selectedItem.clientHeight;
-
-
-//         activeBar.style.top = `${barTop}px`;
-//         activeBar.style.height = `${barHeight}px`;
-
-//         section_select = -1;
-//     });
-// }
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').slice(1) === currentSection) {
+            link.classList.add('active');
+        }
+    });
+});
