@@ -190,6 +190,7 @@ searchInput.addEventListener('input', function() {
     performSearch(query);
 });
 
+
 // sidebar js
 function setActive(index) {
     const infoContainer = document.querySelector('.information-container');
@@ -213,104 +214,74 @@ function setActive(index) {
 
     //side navbar to show the place
 
-    var navbarHeight = document.querySelector('.navbar').offsetHeight;
-    var targetSection = document.getElementById('section' + index);
+    // var navbarHeight = document.querySelector('.navbar').offsetHeight;
+    // var targetSection = document.getElementById('section' + index);
 
-    if (targetSection) {
-        var offset = targetSection.getBoundingClientRect().top - navbarHeight + 30;
-        window.scrollTo({
-            top: offset,
-            behavior: 'smooth'
-        });
-    }
+    // if (targetSection) {
+    //     var offset = targetSection.getBoundingClientRect().top - navbarHeight;
+    //     window.scrollTo({
+    //         top: offset,
+    //         behavior: 'smooth'
+    //     });
+    // }
 }
 
 // Set "Item 1" as the default active item when the page loads
 setActive(1);
 
 
-// Function to check if an element is in the viewport
-function isElementInViewport(el) {
-    var rect = el.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
+// $.fn.isInViewport = function() {
+//     let elementTop = $(this).offset().top;
+//     let elementBottom = elementTop + $(this).outerHeight();
 
-// Function to determine the active section
-function setActiveSection() {
-    var sections = document.querySelectorAll('.section-content');
+//     let viewportTop = $(window).scrollTop();
+//     let viewportBottom = viewportTop + $(window).height();
 
-    sections.forEach(function(section) {
-        if (isElementInViewport(section)) {
-            alert("working")
-                // section.classList.add('active');
-        } else {
-            section.classList.remove('active');
-        }
-    });
-}
-
-// Listen to the scroll event to check for the active section
-window.addEventListener('scroll', setActiveSection);
-
-// Initially check the active section when the page loads
-setActiveSection();
+//     return elementBottom > viewportTop && elementTop < viewportBottom;
+// };
 
 
-$.fn.isInViewport = function() {
-    let elementTop = $(this).offset().top;
-    let elementBottom = elementTop + $(this).outerHeight();
+// let sectionIds = [];
+// let section_select = -1;
+// var sections = document.querySelectorAll('.section-content');
 
-    let viewportTop = $(window).scrollTop();
-    let viewportBottom = viewportTop + $(window).height();
+// $(document).ready(function() {
+//     sections.forEach(function(section) {
+//         sectionIds.push(section.id);
+//     });
+// })
 
-    return elementBottom > viewportTop && elementTop < viewportBottom;
-};
+// if (active_section) {
+//     $(window).scroll(function() {
 
+//         sections.forEach(function(section) {
+//             if ($(section).isInViewport()) {
+//                 if (section_select == -1) {
+//                     section_select = Number((section.id).replace("section", ""));
+//                 }
+//             }
+//         });
 
-let sectionIds = [];
-let section_select = -1;
-var sections = document.querySelectorAll('.section-content');
+//         const infoContainer = document.querySelector('.information-container');
+//         const listItems = infoContainer.querySelectorAll('li');
+//         listItems.forEach((item, i) => {
+//             if (i === section_select - 1) {
+//                 item.classList.add('active');
+//             } else {
+//                 item.classList.remove('active');
+//             }
+//         });
 
-$(document).ready(function() {
-    sections.forEach(function(section) {
-        sectionIds.push(section.id);
-    });
-})
+//         const activeBar = document.querySelector('.active-bar');
 
-$(window).scroll(function() {
-
-    sections.forEach(function(section) {
-        if ($(section).isInViewport()) {
-            if (section_select == -1) {
-                section_select = Number((section.id).replace("section", ""));
-            }
-        }
-    });
-
-    const infoContainer = document.querySelector('.information-container');
-    const listItems = infoContainer.querySelectorAll('li');
-    listItems.forEach((item, i) => {
-        if (i === section_select - 1) {
-            item.classList.add('active');
-        } else {
-            item.classList.remove('active');
-        }
-    });
-
-    const activeBar = document.querySelector('.active-bar');
-
-    const selectedItem = listItems[section_select - 1];
-    const barTop = selectedItem.offsetTop;
-    const barHeight = selectedItem.clientHeight;
+//         const selectedItem = listItems[section_select - 1];
+//         const barTop = selectedItem.offsetTop;
+//         const barHeight = selectedItem.clientHeight;
 
 
-    activeBar.style.top = `${barTop}px`;
-    activeBar.style.height = `${barHeight}px`;
+//         activeBar.style.top = `${barTop}px`;
+//         activeBar.style.height = `${barHeight}px`;
 
-    section_select = -1;
-});
+//         section_select = -1;
+//     });
+// }
