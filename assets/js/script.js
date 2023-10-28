@@ -46,6 +46,23 @@ $(document).ready(function() {
 });
 
 const linkList1 = document.getElementById("linkList1");
+const linkList2 = document.getElementById("linkList2");
+const linkList3 = document.getElementById("linkList3");
+
+function removeActiveClassList1() {
+    const anchorClass1 = linkList1.querySelectorAll("a");
+    anchorClass1.forEach((e) => e.classList.remove("active"));
+}
+
+function removeActiveClassList2() {
+    const anchorClass2 = linkList2.querySelectorAll("a");
+    anchorClass2.forEach((e) => e.classList.remove("active"));
+}
+
+function removeActiveClassList3() {
+    const anchorClass3 = linkList3.querySelectorAll("a");
+    anchorClass3.forEach((e) => e.classList.remove("active"));
+}
 
 linkList1.addEventListener("click", (e) => {
     if (e.target.tagName === "A") {
@@ -59,11 +76,11 @@ linkList1.addEventListener("click", (e) => {
 
         // Get the ID of the clicked link and add the "active" class to the corresponding contentDisplay
         const contentID = e.target.getAttribute("data-content");
+        removeActiveClassList1();
+        e.target.setAttribute("class", "active");
         contentHeader.querySelector("#" + contentID).classList.add("active");
     }
 });
-
-const linkList2 = document.getElementById("linkList2");
 
 linkList2.addEventListener("click", (e) => {
     if (e.target.tagName === "A") {
@@ -77,11 +94,11 @@ linkList2.addEventListener("click", (e) => {
 
         // Get the ID of the clicked link and add the "active" class to the corresponding contentDisplay
         const contentID = e.target.getAttribute("data-content");
+        removeActiveClassList2();
+        e.target.setAttribute("class", "active");
         contentHeader.querySelector("#" + contentID).classList.add("active");
     }
 });
-
-const linkList3 = document.getElementById("linkList3");
 
 linkList3.addEventListener("click", (e) => {
     if (e.target.tagName === "A") {
@@ -95,6 +112,8 @@ linkList3.addEventListener("click", (e) => {
 
         // Get the ID of the clicked link and add the "active" class to the corresponding contentDisplay
         const contentID = e.target.getAttribute("data-content");
+        removeActiveClassList3();
+        e.target.setAttribute("class", "active");
         contentHeader.querySelector("#" + contentID).classList.add("active");
     }
 });
@@ -221,4 +240,22 @@ window.addEventListener('scroll', () => {
             link.classList.add('active');
         }
     });
+});
+
+
+var anchorTags = document.getElementsByTagName('a');
+
+// Loop through all anchor tags and prevent the default drag behavior
+for (var i = 0; i < anchorTags.length; i++) {
+    anchorTags[i].addEventListener('dragstart', function(e) {
+        e.preventDefault();
+    });
+}
+
+window.addEventListener("scroll", function() {
+    removeToggleClass();
+    closeInnerContainer();
+    var hideNavbarBtn = document.getElementById("navbarNav");
+    hideNavbarBtn.classList.remove('show');
+    $(".navbar-toggler").addClass("collapsed");
 });
