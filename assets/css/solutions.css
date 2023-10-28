@@ -1,0 +1,53 @@
+/* Default styles for the banner */
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    /* Image on the right, content on the left */
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.content {
+    flex: 1;
+    /* Content takes available space */
+}
+
+.banner img {
+    max-width: 50%;
+    /* Image width set to 50% */
+}
+
+#section4 .grid-container {
+    gap: 30px;
+}
+
+#section4 .grid-item {
+    padding: 20px;
+}
+
+#section5 .grid-container,
+#section6 .grid-container {
+    gap: 2px;
+}
+
+#section7 {
+    background-color: #e2e2e2;
+}
+
+
+/* Media query for screens smaller than 992px (lg) */
+
+@media (max-width: 991px) {
+    .banner {
+        flex-direction: column;
+        /* Stack content on top of image */
+        text-align: center;
+        /* Center align content */
+    }
+    img {
+        max-width: 100%;
+        /* Image width set to 100% to take full width */
+    }
+}

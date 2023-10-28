@@ -38,8 +38,32 @@ a {
     background-color: #fff;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
+.float-right {
+    float: right;
+}
+
 .my-10 {
     margin: 10rem auto !important;
+}
+
+.py-10 {
+    padding: 10rem 0 !important;
+}
+
+.py-6 {
+    padding: 6rem 0 !important;
+}
+
+.pt-6 {
+    padding-top: 6rem !important;
+}
+
+.pb-6 {
+    padding-bottom: 6rem !important;
 }
 
 .navbarInnerContainer1,
@@ -429,7 +453,7 @@ ul {
     margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 12px;
+    gap: 30px;
 }
 
 #section2 .grid-item {
@@ -473,4 +497,20 @@ ul {
 #section4 .nav-tabs::-webkit-scrollbar {
     width: 0;
     height: 0;
+}
+
+.links {
+    float: right;
+}
+
+.row {
+    margin-bottom: 2px;
+}
+
+.cases {
+    cursor: pointer;
+}
+
+.cases:hover {
+    background-color: #d9d9d9;
 }

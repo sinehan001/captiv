@@ -271,7 +271,7 @@ window.addEventListener("scroll", function() {
 const url_content = document.querySelectorAll(".url-content");
 url_content.forEach(function(element) {
     element.addEventListener("click", function() {
-        var url = "../../" + element.getAttribute("data-url-content") + ".html";
+        var url = element.getAttribute("data-url-content") + ".html";
         window.location.href = url;
     });
 });
