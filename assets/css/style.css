@@ -38,6 +38,22 @@ a {
     background-color: #fff;
 }
 
+.my-10 {
+    margin: 10rem auto !important;
+}
+
+.navbarInnerContainer1,
+.navbarInnerContainer2,
+.navbarInnerContainer3 {
+    border-left: 1px solid #e2e2e2;
+}
+
+.navbarInnerContainer1 .grid-item,
+.navbarInnerContainer2 .grid-item,
+.navbarInnerContainer3 .grid-item {
+    cursor: pointer;
+}
+
 @media (min-width: 576px) {
     .container {
         max-width: none;
@@ -221,10 +237,6 @@ a {
     transform: rotate(0deg);
 }
 
-.navInnerContainer1 {
-    overflow-y: scroll;
-}
-
 .nav-link .expanded {
     transition: transform 0.7s;
     transform: rotate(180deg);
@@ -261,7 +273,7 @@ ul {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 12px;
 }
 
