@@ -252,10 +252,34 @@ for (var i = 0; i < anchorTags.length; i++) {
     });
 }
 
+var lastScrollY = 0;
+
 window.addEventListener("scroll", function() {
-    removeToggleClass();
-    closeInnerContainer();
-    var hideNavbarBtn = document.getElementById("navbarNav");
-    hideNavbarBtn.classList.remove('show');
-    $(".navbar-toggler").addClass("collapsed");
+    var currentScrollY = window.scrollY;
+    if (Math.abs(currentScrollY - lastScrollY) >= 100) {
+        removeToggleClass();
+        closeInnerContainer();
+        var hideNavbarBtn = document.getElementById("navbarNav");
+        hideNavbarBtn.classList.remove('show');
+        $(".navbar-toggler").addClass("collapsed");
+        lastScrollY = currentScrollY;
+    }
 });
+
+
+
+// window.addEventListener("scroll", function() {
+//     removeToggleClass();
+//     closeInnerContainer();
+//     var hideNavbarBtn = document.getElementById("navbarNav");
+//     hideNavbarBtn.classList.remove('show');
+//     $(".navbar-toggler").addClass("collapsed");
+// });
+
+// const contentContainer1 = document.getElementById("contentContainer1");
+// const contentContainer2 = document.getElementById("contentContainer2");
+// const contentContainer3 = document.getElementById("contentContainer3");
+
+// window.addEventListener("DOMContentLoaded", function() {
+//     contentContainer1.style.height = window.innerHeight - 200;
+// })
