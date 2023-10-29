@@ -58,7 +58,7 @@
         text-align: center;
         /* Center align content */
     }
-    img {
+    .banner img {
         max-width: 100%;
         /* Image width set to 100% to take full width */
     }
