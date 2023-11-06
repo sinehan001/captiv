@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captiv</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="../../assets/css/style.css" rel="stylesheet">
+    <link href="../../assets/css/solutions.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="header fixed-top">
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <div class="navbar-left w-100 d-flex justify-content-between">
+                    <div class="navbar-left-side d-flex">
+                        <button class="navbar-toggler custom-toggler collapsed me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>
+                    </button>
+                        <a class="navbar-brand" href="/captiv/">
+                            <img src="../../assets/images/CAPTIV-LOGO.png" alt="Your Logo" height="32">
+                        </a>
+                    </div>
+                    <!-- <div class="navbar-right-side d-md-none d-flex align-items-center mx-2 search-icon">
+                        <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 32 32">
+                        <path d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z"></path>
+                    </svg>
+                    </div> -->
+                </div>
+
+                <!-- Navbar Links (Visible on larger screens) -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <!-- <li class="nav-item active">
+                            <a class="nav-link fw-bold" href="javascript:void(0);">Home</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="javascript:void(0);" id="toggleLink1">Solutions <i class="fas fa-caret-down"></i></a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link fw-bold" href="javascript:void(0);" id="toggleLink2">Services <i class="fas fa-caret-down"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="javascript:void(0);" id="toggleLink3">Research <i class="fas fa-caret-down"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="javascript:void(0);">About</a>
+                        </li> -->
+                    </ul>
+                </div>
+                <!-- <div class="d-none d-md-block mx-2 search-icon">
+                    <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 32 32">
+                    <path d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z"></path>
+                </svg>
+                </div> -->
+            </div>
+        </nav>
+        <!-- Solutions -->
+        <div id="contentContainer1" style="display: none;">
+            <div class="row">
+                <div class="col-auto col-lg-3 col-md-3 col-sm-4 col-xs-auto pe-0">
+                    <ul id="linkList1">
+                        <li><a href="javascript:void(0);" data-content="contentDisplay1" class="active">Automation</a></li>
+                        <li><a href="javascript:void(0);" data-content="contentDisplay2">Data & AI</a></li>
+                        <li><a href="javascript:void(0);" data-content="contentDisplay3">Industry</a></li>
+                        <li><a href="javascript:void(0);" data-content="contentDisplay4">Infrastructure</a></li>
+                        <li><a href="javascript:void(0);" data-content="contentDisplay5">Security</a></li>
+                        <li><a href="javascript:void(0);" data-content="contentDisplay6">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="col-auto col-lg-9 col-md-9 col-sm-8 col-xs-auto navbarInnerContainer1">
+                    <div class="contentDisplay active" id="contentDisplay1">
+                        <h4 class="my-2"><a href="Solutions/Automation" class="no-underline"> Automation <i class="fas fa-arrow-right"></i></a></h4>
+                        <span>Intellectual IT Support for your business growth</span>
+                        <div class="grid-container my-4">
+                            <div class="grid-item url-content" data-url-content="Solutions/Automation/Application-Performance-Management">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Application Performance Management</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Automation/Business-Automation">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Business automation</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Automation/Cloud-Cost-Management">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Cloud Cost Management</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Automation/Decision-Management">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Decision Management</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Automation/DevOps-Automation">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">DevOps Automation</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Automation/Integration">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Integration</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Automation/Workflow-Automation">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Workflow Automation</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentDisplay" id="contentDisplay2">
+                        <h4 class="my-2"><a href="Solutions/Data&AI" class="no-underline"> Data & AI <i class="fas fa-arrow-right"></i></a></h4>
+                        <span>Optimize your data strategy to support data-driven decisions</span>
+                        <div class="grid-container my-4">
+                            <div class="grid-item url-content" data-url-content="Solutions/Data&AI/Data-Lake">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Data Lake</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Data&AI/Data-Warehouse">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Data Warehouse</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Data&AI/Integration">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Integration</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentDisplay" id="contentDisplay3">
+                        <h4 class="my-2"><a href="Solutions/Industry" class="no-underline"> Industry <i class="fas fa-arrow-right"></i></a></h4>
+                        <span>Optimize your data strategy to support data-driven decisions</span>
+                        <div class="grid-container my-4">
+                            <div class="grid-item url-content" data-url-content="Solutions/Industry/Analytics">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Analytics</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Industry/Energy&Utilities">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Energy & Utilities</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Industry/Government">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Government</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Industry/Manufacturing">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Manufacturing</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentDisplay" id="contentDisplay4">
+                        <h4 class="my-2"><a href="Solutions/Infrastructure" class="no-underline"> Infrastructure <i class="fas fa-arrow-right"></i></a></h4>
+                        <span>Great Infrastructure Services with complete data protection</span>
+                        <div class="grid-container my-4">
+                            <div class="grid-item url-content" data-url-content="Solutions/Infrastructure/Backup&Recovery">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Backup & Recovery</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Infrastructure/HybridCloud">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Hybrid Cloud</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Infrastructure/ITModernization">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">IT Modernization</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentDisplay" id="contentDisplay5">
+                        <h4 class="my-2"><a href="Solutions/Security" class="no-underline"> Security <i class="fas fa-arrow-right"></i></a></h4>
+                        <span>Enterprise cybersecurity for today's hybrid cloud environments</span>
+                        <div class="grid-container my-4">
+                            <div class="grid-item url-content" data-url-content="Solutions/Security/CloudSecurity">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Cloud Security</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Security/Forensics">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Forensics</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Security/SecurityAutomation">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Security Automation</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Security/ZeroTrust">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Zero Trust</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentDisplay" id="contentDisplay6">
+                        <h4 class="my-2"><a href="Solutions/Sustainability" class="no-underline"> Sustainability <i class="fas fa-arrow-right"></i></a></h4>
+                        <span>Embed sustainability into your business transformation</span>
+                        <div class="grid-container my-4">
+                            <div class="grid-item url-content" data-url-content="Solutions/Sustainability/AssetManagement">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Asset Management</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Sustainability/SupplyChain">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Supply Chain</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services -->
+        <div id="contentContainer2" style="display: none;">
+            <div class="row">
+                <div class="col-auto col-lg-3 col-md-3 col-sm-4 col-xs-auto">
+                    <ul id="linkList2">
+                        <li><a href="javascript:void(0);" data-content="contentDisplay1" class="active">Automation</a></li>
+                        <li><a href="javascript:void(0);" data-content="contentDisplay2">Data & AI</a></li>
+                        <li><a href="javascript:void(0);" data-content="contentDisplay3">Industry</a></li>
+                        <li><a href="javascript:void(0);" data-content="contentDisplay4">Infrastructure</a></li>
+                        <li><a href="javascript:void(0);" data-content="contentDisplay5">Security</a></li>
+                        <li><a href="javascript:void(0);" data-content="contentDisplay6">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="col-auto col-lg-9 col-md-9 col-sm-8 col-xs-auto navbarInnerContainer2">
+                    <div class="contentDisplay active" id="contentDisplay1">
+                        <h4 class="my-2">Automation</h4>
+                        <div class="grid-container my-4">
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentDisplay" id="contentDisplay2">
+                        <h2>Content sol</h2>
+                        <p>Content 2 goes here.</p>
+                    </div>
+                    <div class="contentDisplay" id="contentDisplay3">
+                        <h2>Content sol</h2>
+                        <p>Content 3 goes here.</p>
+                    </div>
+                    <div class="contentDisplay" id="contentDisplay4">
+                        <h2>Content sol</h2>
+                        <p>Content 4 goes here.</p>
+                    </div>
+                    <div class="contentDisplay" id="contentDisplay5">
+                        <h2>Content sol</h2>
+                        <p>Content 5 goes here.</p>
+                    </div>
+                    <div class="contentDisplay" id="contentDisplay6">
+                        <h2>Content sol</h2>
+                        <p>Content 6 goes here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Research -->
+        <div id="contentContainer3" style="display: none;">
+            <div class="row">
+                <div class="col-auto col-lg-3 col-md-3 col-sm-4 col-xs-auto">
+                    <ul id="linkList3">
+                        <li><a href="javascript:void(0);" data-content="contentDisplay1" class="active">Automation</a></li>
+                        <li><a href="javascript:void(0);" data-content="contentDisplay2">Data & AI</a></li>
+                        <li><a href="javascript:void(0);" data-content="contentDisplay3">Industry</a></li>
+                        <li><a href="javascript:void(0);" data-content="contentDisplay4">Infrastructure</a></li>
+                        <li><a href="javascript:void(0);" data-content="contentDisplay5">Security</a></li>
+                        <li><a href="javascript:void(0);" data-content="contentDisplay6">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="col-auto col-lg-9 col-md-9 col-sm-8 col-xs-auto navbarInnerContainer3">
+                    <div class="contentDisplay active" id="contentDisplay1">
+                        <h4 class="my-2"><a href="Automation" class="no-underline">Automation <i class="fas fa-arrow-right"></i></a></h4>
+                        <span>Intellectual IT Support for your business growth</span>
+                        <div class="grid-container my-4">
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentDisplay" id="contentDisplay2">
+                        <h2>Content sol</h2>
+                        <p>Content 2 goes here.</p>
+                    </div>
+                    <div class="contentDisplay" id="contentDisplay3">
+                        <h2>Content sol</h2>
+                        <p>Content 3 goes here.</p>
+                    </div>
+                    <div class="contentDisplay" id="contentDisplay4">
+                        <h2>Content sol</h2>
+                        <p>Content 4 goes here.</p>
+                    </div>
+                    <div class="contentDisplay" id="contentDisplay5">
+                        <h2>Content sol</h2>
+                        <p>Content 5 goes here.</p>
+                    </div>
+                    <div class="contentDisplay" id="contentDisplay6">
+                        <h2>Content sol</h2>
+                        <p>Content 6 goes here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="navbar-fill"></div>
+
+    <!-- Solutions Container -->
+    <div class="container main-container bg-light">
+        <!-- row -->
+        <div class="row justify-content-center py-5 mx-2">
+            <!-- hero content -->
+            <div class="col-md-9 col-lg-6 align-self-center pe-lg-5" data-aos="flip-up">
+                <div class="text-center text-lg-start mt-4 mt-lg-0">
+                    <div class="mb-3">
+                        <span class="badge bg-secondary rounded">New</span>
+                        <span class="text-dark ms-1">Automation</span>
+                    </div>
+                    <div class="mb-5">
+                        <h2 class="display-5 fw-bold text-white mb-3">
+                            <span class="text-dark">Maximize Value, Cut Costs, Align Tech for Success</span>
+                        </h2>
+                        <p class="lead text-dark">Application performance monitoring (APM) and observability market as software that enables the observation and analysis of application health, performance and user experience. The targeted roles are IT operations, site reliability
+                            engineers, cloud and platform teams, application developers, and product owners. These solutions may be offered for self-hosted deployment, as a vendor-managed hosted environment, or via SaaS</p>
+                    </div>
+                    <a class="btn btn-primary hover-button-up m-2" href="#demo">Book Meeting</a>
+                    <a class="btn btn-outline-primary hover-button-up m-2" href="#">Start Trail</a>
+                </div>
+            </div>
+            <!-- hero image -->
+            <div class="col-md-9 col-lg-6 align-self-center">
+                <div class="px-3 px-sm-7 px-md-2 px-xl-7 mt-5 mt-lg-0 mb-n9 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <!--googleoff: index-->
+                    <img class="img-fluid" src="../../assets/images/Automation.jpg" alt="images title">
+                    <!--googleon: index-->
+                </div>
+            </div>
+        </div>
+        <!-- end row -->
+    </div>
+
+    <!-- Information Container -->
+    <div class="container information-container bg-light">
+        <div class="row justify-content-center d-flex py-5 mx-2">
+            <div class="col-md-4 col-lg-3 pe-lg-2 d-none d-md-block h-100 sticky-top information-link" data-bs-spy="scroll" data-bs-target="#list-container" data-offset="100">
+                <div class="list-container" id="list-container">
+                    <!-- <div class="active-bar"></div> -->
+                    <ul class="w-100">
+                        <li class="side-nav-item active" href="#section1">Overview</li>
+                        <li class="side-nav-item" href="#section2">Benefits</li>
+                        <li class="side-nav-item" href="#section3">Solutions</li>
+                        <li class="side-nav-item" href="#section4">Features</li>
+                        <li class="side-nav-item" href="#section5">Case Studies</li>
+                        <li class="side-nav-item" href="#section6">Resources</li>
+                        <li class="side-nav-item" href="#section7">Next Steps</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-8 col-lg-9 align-self-center ps-lg-5 information-content">
+                <div class="scroll-content">
+                    <div class="section-content py-6" id="section1">
+                        <h2 class="fw-bold py-4">Overview</h2>
+                        <h4>Struggling to Manage Your Cloud Expenses?</h4>
+                        <p>CAPTIV app-centric cloud cost tools unearth your setup and align resource data across apps and infrastructure. This software crafts reliable resource actions for compute, storage, DBaaS, and Kubernetes, enabling automated cost-efficiency,
+                            slashing your cloud expenses.</p>
+                        <img src="../../assets/images/Automation.jpg" class="py-6" style="width: 100%" alt="banner1" />
+                    </div>
+                    <hr/>
+                    <div class="section-content py-6" id="section2">
+                        <h2 class="fw-bold">Benefits</h2>
+                        <div class="grid-container my-5">
+                            <div class="grid-item">
+                                <div class="text-center mb-3">
+                                    <svg width="100px" height="100px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7086 1.53214C10.9786 1.05676 10.078 0.917375 9.27255 1.04467C8.46803 1.17183 7.62325 1.5904 7.12591 2.39445C6.9332 2.70601 6.81024 3.04646 6.7559 3.40767C5.97312 3.35525 5.18086 3.59264 4.58547 4.08919C3.98255 4.59201 3.59741 5.34432 3.59741 6.25684C3.59741 6.55614 3.63851 6.86315 3.72008 7.17654C3.42298 7.23942 3.13697 7.34918 2.86932 7.50027C1.98542 7.99927 1.36438 8.90663 1.11913 9.88841C0.869371 10.8882 0.989124 12.0467 1.70052 13.0391C2.0609 13.5419 2.54903 13.9691 3.1623 14.305C3.01053 14.5081 2.88229 14.7271 2.77811 14.9565C2.35249 15.8935 2.32044 17.0038 2.64559 17.98C2.97535 18.9701 3.69756 19.8871 4.83624 20.3254C5.57833 20.6111 6.42615 20.6665 7.35551 20.4749C7.39798 20.9494 7.52745 21.3806 7.74983 21.7577C8.22598 22.5651 9.0236 22.9458 9.80541 22.9947C10.5523 23.0414 11.3758 22.778 12 22.2458C12.6242 22.778 13.4477 23.0414 14.1946 22.9947C14.9764 22.9458 15.774 22.5651 16.2502 21.7577C16.4725 21.3806 16.602 20.9494 16.6445 20.4749C17.5738 20.6665 18.4217 20.6111 19.1638 20.3254C20.3024 19.8871 21.0246 18.9701 21.3544 17.98C21.6796 17.0038 21.6475 15.8935 21.2219 14.9565C21.1177 14.7271 20.9895 14.5081 20.8377 14.305C21.451 13.9691 21.9391 13.5419 22.2995 13.0391C23.0109 12.0467 23.1306 10.8882 22.8809 9.88841C22.6356 8.90663 22.0146 7.99927 21.1307 7.50027C20.863 7.34918 20.577 7.23942 20.2799 7.17654C20.3615 6.86315 20.4026 6.55614 20.4026 6.25684C20.4026 5.34432 20.0175 4.59201 19.4145 4.08919C18.8191 3.59264 18.0269 3.35525 17.2441 3.40767C17.1898 3.04646 17.0668 2.70601 16.8741 2.39445C16.3767 1.5904 15.532 1.17183 14.7274 1.04467C13.922 0.917375 13.0214 1.05676 12.2914 1.53214C11.9861 1.73097 12.0139 1.73097 11.7086 1.53214ZM13.0033 20.0518L13.0033 17.5288C13.0045 17.0494 13.1133 16.3457 13.3939 15.7998C13.6573 15.2872 13.9946 15.0268 14.5082 15.0268C15.0623 15.0268 15.5115 14.5773 15.5115 14.0227C15.5115 13.4682 15.0623 13.0186 14.5082 13.0186C13.9202 13.0186 13.4216 13.16 13.0033 13.3894V12.5084C13.0045 12.029 13.1133 11.3254 13.3939 10.7794C13.6573 10.2668 13.9946 10.0064 14.5082 10.0064C15.0623 10.0064 15.5115 9.55688 15.5115 9.00234C15.5115 8.4478 15.0623 7.99826 14.5082 7.99826C13.9202 7.99826 13.4216 8.13957 13.0033 8.36902L13.0033 3.97532C13.005 3.57853 13.1671 3.35779 13.3859 3.21528C13.6436 3.04746 14.0284 2.96723 14.4144 3.02824C14.8013 3.08939 15.0539 3.26704 15.1679 3.45142C15.2603 3.60078 15.3726 3.9329 15.091 4.59054C14.9015 5.03294 15.0524 5.54766 15.4507 5.8175C15.849 6.08734 16.3825 6.03639 16.7226 5.69604C17.0903 5.32811 17.7563 5.32032 18.1299 5.63189C18.2795 5.75662 18.396 5.94564 18.396 6.25684C18.396 6.59422 18.2548 7.14633 17.705 7.91672C17.4235 8.31116 17.4637 8.85055 17.8006 9.19878C18.1375 9.54701 18.6749 9.60465 19.0779 9.33577C19.5101 9.04741 19.8566 9.08664 20.1448 9.24934C20.4837 9.44063 20.8032 9.85112 20.9342 10.3755C21.0607 10.8818 20.9923 11.4176 20.669 11.8686C20.3466 12.3184 19.6765 12.8121 18.3565 13.0323C17.8683 13.1137 17.5124 13.5392 17.5182 14.0344C17.5239 14.5296 17.8896 14.9467 18.3795 15.0167C18.8812 15.0884 19.207 15.3732 19.3952 15.7874C19.5966 16.231 19.6273 16.8151 19.4508 17.345C19.2789 17.861 18.9351 18.2619 18.4434 18.4511C17.9498 18.6411 17.1399 18.6809 15.9267 18.129C15.5761 17.9695 15.1653 18.025 14.8694 18.2716C14.5735 18.5183 14.4448 18.9127 14.5382 19.2866C14.6621 19.7827 14.8668 20.9406 14.0694 20.9905C13.5184 21.0249 13.0062 20.6055 13.0033 20.0518ZM10.9967 3.97532C10.995 3.57853 10.8329 3.35779 10.6141 3.21528C10.3564 3.04746 9.97157 2.96723 9.58558 3.02824C9.19869 3.08939 8.94611 3.26704 8.83207 3.45142C8.73968 3.60078 8.62739 3.9329 8.90901 4.59054C9.09846 5.03294 8.94757 5.54766 8.54931 5.8175C8.15105 6.08734 7.61747 6.03639 7.27739 5.69604C6.90975 5.32811 6.24365 5.32032 5.87006 5.63189C5.72051 5.75662 5.604 5.94564 5.604 6.25684C5.604 6.59422 5.74515 7.14633 6.29501 7.91672C6.57653 8.31116 6.53629 8.85055 6.19937 9.19878C5.86246 9.54701 5.32505 9.60465 4.92206 9.33577C4.48987 9.04741 4.1434 9.08664 3.8552 9.24934C3.51634 9.44063 3.19679 9.85112 3.06581 10.3755C2.93933 10.8818 3.0077 11.4176 3.33095 11.8686C3.65342 12.3184 4.32349 12.8121 5.64353 13.0323C6.13166 13.1137 6.48757 13.5392 6.48182 14.0344C6.47607 14.5296 6.11037 14.9467 5.62048 15.0167C5.1188 15.0884 4.793 15.3732 4.60484 15.7874C4.40339 16.231 4.37273 16.8151 4.54922 17.345C4.7211 17.861 5.06489 18.2619 5.55656 18.4511C6.05021 18.6411 6.86015 18.6809 8.0733 18.129C8.42388 17.9695 8.83474 18.025 9.13063 18.2716C9.42652 18.5183 9.5552 18.9127 9.4618 19.2866C9.33788 19.7827 9.13324 20.9406 9.93058 20.9905C10.4816 21.0249 10.9938 20.6055 10.9967 20.0518L10.9967 20.0472V17.5292C10.9955 17.0498 10.8868 16.3459 10.6061 15.7998C10.3427 15.2872 10.0054 15.0268 9.49176 15.0268C8.93765 15.0268 8.48846 14.5773 8.48846 14.0227C8.48846 13.4682 8.93765 13.0186 9.49176 13.0186C10.0798 13.0186 10.5784 13.16 10.9967 13.3894V12.5088C10.9955 12.0294 10.8868 11.3255 10.6061 10.7794C10.3427 10.2668 10.0054 10.0064 9.49176 10.0064C8.93765 10.0064 8.48846 9.55688 8.48846 9.00234C8.48846 8.4478 8.93765 7.99826 9.49176 7.99826C10.0798 7.99826 10.5784 8.13957 10.9967 8.36902L10.9967 3.97532Z" fill="#0F0F0F"/>
+                                        </svg>
+                                </div>
+                                <h5 class="fw-bold"> Optimize value with top efficiency</h5>
+                                <p>
+                                    Boost App Performance and Save Big on Cloud Costs with Intelligent Cloud Resource Management. Our cutting-edge software optimizes your cloud usage, factoring in key metrics and context for compute, storage, databases, and Kubernetes. Empower your IT team
+                                    to automate and consistently enhance cloud spending throughout your digital journey
+                                </p>
+                            </div>
+                            <div class="grid-item">
+                                <div class="text-center mb-3">
+                                    <svg width="100px" height="100px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7086 1.53214C10.9786 1.05676 10.078 0.917375 9.27255 1.04467C8.46803 1.17183 7.62325 1.5904 7.12591 2.39445C6.9332 2.70601 6.81024 3.04646 6.7559 3.40767C5.97312 3.35525 5.18086 3.59264 4.58547 4.08919C3.98255 4.59201 3.59741 5.34432 3.59741 6.25684C3.59741 6.55614 3.63851 6.86315 3.72008 7.17654C3.42298 7.23942 3.13697 7.34918 2.86932 7.50027C1.98542 7.99927 1.36438 8.90663 1.11913 9.88841C0.869371 10.8882 0.989124 12.0467 1.70052 13.0391C2.0609 13.5419 2.54903 13.9691 3.1623 14.305C3.01053 14.5081 2.88229 14.7271 2.77811 14.9565C2.35249 15.8935 2.32044 17.0038 2.64559 17.98C2.97535 18.9701 3.69756 19.8871 4.83624 20.3254C5.57833 20.6111 6.42615 20.6665 7.35551 20.4749C7.39798 20.9494 7.52745 21.3806 7.74983 21.7577C8.22598 22.5651 9.0236 22.9458 9.80541 22.9947C10.5523 23.0414 11.3758 22.778 12 22.2458C12.6242 22.778 13.4477 23.0414 14.1946 22.9947C14.9764 22.9458 15.774 22.5651 16.2502 21.7577C16.4725 21.3806 16.602 20.9494 16.6445 20.4749C17.5738 20.6665 18.4217 20.6111 19.1638 20.3254C20.3024 19.8871 21.0246 18.9701 21.3544 17.98C21.6796 17.0038 21.6475 15.8935 21.2219 14.9565C21.1177 14.7271 20.9895 14.5081 20.8377 14.305C21.451 13.9691 21.9391 13.5419 22.2995 13.0391C23.0109 12.0467 23.1306 10.8882 22.8809 9.88841C22.6356 8.90663 22.0146 7.99927 21.1307 7.50027C20.863 7.34918 20.577 7.23942 20.2799 7.17654C20.3615 6.86315 20.4026 6.55614 20.4026 6.25684C20.4026 5.34432 20.0175 4.59201 19.4145 4.08919C18.8191 3.59264 18.0269 3.35525 17.2441 3.40767C17.1898 3.04646 17.0668 2.70601 16.8741 2.39445C16.3767 1.5904 15.532 1.17183 14.7274 1.04467C13.922 0.917375 13.0214 1.05676 12.2914 1.53214C11.9861 1.73097 12.0139 1.73097 11.7086 1.53214ZM13.0033 20.0518L13.0033 17.5288C13.0045 17.0494 13.1133 16.3457 13.3939 15.7998C13.6573 15.2872 13.9946 15.0268 14.5082 15.0268C15.0623 15.0268 15.5115 14.5773 15.5115 14.0227C15.5115 13.4682 15.0623 13.0186 14.5082 13.0186C13.9202 13.0186 13.4216 13.16 13.0033 13.3894V12.5084C13.0045 12.029 13.1133 11.3254 13.3939 10.7794C13.6573 10.2668 13.9946 10.0064 14.5082 10.0064C15.0623 10.0064 15.5115 9.55688 15.5115 9.00234C15.5115 8.4478 15.0623 7.99826 14.5082 7.99826C13.9202 7.99826 13.4216 8.13957 13.0033 8.36902L13.0033 3.97532C13.005 3.57853 13.1671 3.35779 13.3859 3.21528C13.6436 3.04746 14.0284 2.96723 14.4144 3.02824C14.8013 3.08939 15.0539 3.26704 15.1679 3.45142C15.2603 3.60078 15.3726 3.9329 15.091 4.59054C14.9015 5.03294 15.0524 5.54766 15.4507 5.8175C15.849 6.08734 16.3825 6.03639 16.7226 5.69604C17.0903 5.32811 17.7563 5.32032 18.1299 5.63189C18.2795 5.75662 18.396 5.94564 18.396 6.25684C18.396 6.59422 18.2548 7.14633 17.705 7.91672C17.4235 8.31116 17.4637 8.85055 17.8006 9.19878C18.1375 9.54701 18.6749 9.60465 19.0779 9.33577C19.5101 9.04741 19.8566 9.08664 20.1448 9.24934C20.4837 9.44063 20.8032 9.85112 20.9342 10.3755C21.0607 10.8818 20.9923 11.4176 20.669 11.8686C20.3466 12.3184 19.6765 12.8121 18.3565 13.0323C17.8683 13.1137 17.5124 13.5392 17.5182 14.0344C17.5239 14.5296 17.8896 14.9467 18.3795 15.0167C18.8812 15.0884 19.207 15.3732 19.3952 15.7874C19.5966 16.231 19.6273 16.8151 19.4508 17.345C19.2789 17.861 18.9351 18.2619 18.4434 18.4511C17.9498 18.6411 17.1399 18.6809 15.9267 18.129C15.5761 17.9695 15.1653 18.025 14.8694 18.2716C14.5735 18.5183 14.4448 18.9127 14.5382 19.2866C14.6621 19.7827 14.8668 20.9406 14.0694 20.9905C13.5184 21.0249 13.0062 20.6055 13.0033 20.0518ZM10.9967 3.97532C10.995 3.57853 10.8329 3.35779 10.6141 3.21528C10.3564 3.04746 9.97157 2.96723 9.58558 3.02824C9.19869 3.08939 8.94611 3.26704 8.83207 3.45142C8.73968 3.60078 8.62739 3.9329 8.90901 4.59054C9.09846 5.03294 8.94757 5.54766 8.54931 5.8175C8.15105 6.08734 7.61747 6.03639 7.27739 5.69604C6.90975 5.32811 6.24365 5.32032 5.87006 5.63189C5.72051 5.75662 5.604 5.94564 5.604 6.25684C5.604 6.59422 5.74515 7.14633 6.29501 7.91672C6.57653 8.31116 6.53629 8.85055 6.19937 9.19878C5.86246 9.54701 5.32505 9.60465 4.92206 9.33577C4.48987 9.04741 4.1434 9.08664 3.8552 9.24934C3.51634 9.44063 3.19679 9.85112 3.06581 10.3755C2.93933 10.8818 3.0077 11.4176 3.33095 11.8686C3.65342 12.3184 4.32349 12.8121 5.64353 13.0323C6.13166 13.1137 6.48757 13.5392 6.48182 14.0344C6.47607 14.5296 6.11037 14.9467 5.62048 15.0167C5.1188 15.0884 4.793 15.3732 4.60484 15.7874C4.40339 16.231 4.37273 16.8151 4.54922 17.345C4.7211 17.861 5.06489 18.2619 5.55656 18.4511C6.05021 18.6411 6.86015 18.6809 8.0733 18.129C8.42388 17.9695 8.83474 18.025 9.13063 18.2716C9.42652 18.5183 9.5552 18.9127 9.4618 19.2866C9.33788 19.7827 9.13324 20.9406 9.93058 20.9905C10.4816 21.0249 10.9938 20.6055 10.9967 20.0518L10.9967 20.0472V17.5292C10.9955 17.0498 10.8868 16.3459 10.6061 15.7998C10.3427 15.2872 10.0054 15.0268 9.49176 15.0268C8.93765 15.0268 8.48846 14.5773 8.48846 14.0227C8.48846 13.4682 8.93765 13.0186 9.49176 13.0186C10.0798 13.0186 10.5784 13.16 10.9967 13.3894V12.5088C10.9955 12.0294 10.8868 11.3255 10.6061 10.7794C10.3427 10.2668 10.0054 10.0064 9.49176 10.0064C8.93765 10.0064 8.48846 9.55688 8.48846 9.00234C8.48846 8.4478 8.93765 7.99826 9.49176 7.99826C10.0798 7.99826 10.5784 8.13957 10.9967 8.36902L10.9967 3.97532Z" fill="#0F0F0F"/>
+                                        </svg>
+                                </div>
+                                <h5 class="fw-bold"> Boost Tech Efficiency </h5>
+                                <p>
+                                    Optimize app resources for peak performance and cost-efficiency, freeing your cloud teams to enhance user experiences
+                                </p>
+                            </div>
+                            <div class="grid-item">
+                                <div class="text-center mb-3">
+                                    <svg width="100px" height="100px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7086 1.53214C10.9786 1.05676 10.078 0.917375 9.27255 1.04467C8.46803 1.17183 7.62325 1.5904 7.12591 2.39445C6.9332 2.70601 6.81024 3.04646 6.7559 3.40767C5.97312 3.35525 5.18086 3.59264 4.58547 4.08919C3.98255 4.59201 3.59741 5.34432 3.59741 6.25684C3.59741 6.55614 3.63851 6.86315 3.72008 7.17654C3.42298 7.23942 3.13697 7.34918 2.86932 7.50027C1.98542 7.99927 1.36438 8.90663 1.11913 9.88841C0.869371 10.8882 0.989124 12.0467 1.70052 13.0391C2.0609 13.5419 2.54903 13.9691 3.1623 14.305C3.01053 14.5081 2.88229 14.7271 2.77811 14.9565C2.35249 15.8935 2.32044 17.0038 2.64559 17.98C2.97535 18.9701 3.69756 19.8871 4.83624 20.3254C5.57833 20.6111 6.42615 20.6665 7.35551 20.4749C7.39798 20.9494 7.52745 21.3806 7.74983 21.7577C8.22598 22.5651 9.0236 22.9458 9.80541 22.9947C10.5523 23.0414 11.3758 22.778 12 22.2458C12.6242 22.778 13.4477 23.0414 14.1946 22.9947C14.9764 22.9458 15.774 22.5651 16.2502 21.7577C16.4725 21.3806 16.602 20.9494 16.6445 20.4749C17.5738 20.6665 18.4217 20.6111 19.1638 20.3254C20.3024 19.8871 21.0246 18.9701 21.3544 17.98C21.6796 17.0038 21.6475 15.8935 21.2219 14.9565C21.1177 14.7271 20.9895 14.5081 20.8377 14.305C21.451 13.9691 21.9391 13.5419 22.2995 13.0391C23.0109 12.0467 23.1306 10.8882 22.8809 9.88841C22.6356 8.90663 22.0146 7.99927 21.1307 7.50027C20.863 7.34918 20.577 7.23942 20.2799 7.17654C20.3615 6.86315 20.4026 6.55614 20.4026 6.25684C20.4026 5.34432 20.0175 4.59201 19.4145 4.08919C18.8191 3.59264 18.0269 3.35525 17.2441 3.40767C17.1898 3.04646 17.0668 2.70601 16.8741 2.39445C16.3767 1.5904 15.532 1.17183 14.7274 1.04467C13.922 0.917375 13.0214 1.05676 12.2914 1.53214C11.9861 1.73097 12.0139 1.73097 11.7086 1.53214ZM13.0033 20.0518L13.0033 17.5288C13.0045 17.0494 13.1133 16.3457 13.3939 15.7998C13.6573 15.2872 13.9946 15.0268 14.5082 15.0268C15.0623 15.0268 15.5115 14.5773 15.5115 14.0227C15.5115 13.4682 15.0623 13.0186 14.5082 13.0186C13.9202 13.0186 13.4216 13.16 13.0033 13.3894V12.5084C13.0045 12.029 13.1133 11.3254 13.3939 10.7794C13.6573 10.2668 13.9946 10.0064 14.5082 10.0064C15.0623 10.0064 15.5115 9.55688 15.5115 9.00234C15.5115 8.4478 15.0623 7.99826 14.5082 7.99826C13.9202 7.99826 13.4216 8.13957 13.0033 8.36902L13.0033 3.97532C13.005 3.57853 13.1671 3.35779 13.3859 3.21528C13.6436 3.04746 14.0284 2.96723 14.4144 3.02824C14.8013 3.08939 15.0539 3.26704 15.1679 3.45142C15.2603 3.60078 15.3726 3.9329 15.091 4.59054C14.9015 5.03294 15.0524 5.54766 15.4507 5.8175C15.849 6.08734 16.3825 6.03639 16.7226 5.69604C17.0903 5.32811 17.7563 5.32032 18.1299 5.63189C18.2795 5.75662 18.396 5.94564 18.396 6.25684C18.396 6.59422 18.2548 7.14633 17.705 7.91672C17.4235 8.31116 17.4637 8.85055 17.8006 9.19878C18.1375 9.54701 18.6749 9.60465 19.0779 9.33577C19.5101 9.04741 19.8566 9.08664 20.1448 9.24934C20.4837 9.44063 20.8032 9.85112 20.9342 10.3755C21.0607 10.8818 20.9923 11.4176 20.669 11.8686C20.3466 12.3184 19.6765 12.8121 18.3565 13.0323C17.8683 13.1137 17.5124 13.5392 17.5182 14.0344C17.5239 14.5296 17.8896 14.9467 18.3795 15.0167C18.8812 15.0884 19.207 15.3732 19.3952 15.7874C19.5966 16.231 19.6273 16.8151 19.4508 17.345C19.2789 17.861 18.9351 18.2619 18.4434 18.4511C17.9498 18.6411 17.1399 18.6809 15.9267 18.129C15.5761 17.9695 15.1653 18.025 14.8694 18.2716C14.5735 18.5183 14.4448 18.9127 14.5382 19.2866C14.6621 19.7827 14.8668 20.9406 14.0694 20.9905C13.5184 21.0249 13.0062 20.6055 13.0033 20.0518ZM10.9967 3.97532C10.995 3.57853 10.8329 3.35779 10.6141 3.21528C10.3564 3.04746 9.97157 2.96723 9.58558 3.02824C9.19869 3.08939 8.94611 3.26704 8.83207 3.45142C8.73968 3.60078 8.62739 3.9329 8.90901 4.59054C9.09846 5.03294 8.94757 5.54766 8.54931 5.8175C8.15105 6.08734 7.61747 6.03639 7.27739 5.69604C6.90975 5.32811 6.24365 5.32032 5.87006 5.63189C5.72051 5.75662 5.604 5.94564 5.604 6.25684C5.604 6.59422 5.74515 7.14633 6.29501 7.91672C6.57653 8.31116 6.53629 8.85055 6.19937 9.19878C5.86246 9.54701 5.32505 9.60465 4.92206 9.33577C4.48987 9.04741 4.1434 9.08664 3.8552 9.24934C3.51634 9.44063 3.19679 9.85112 3.06581 10.3755C2.93933 10.8818 3.0077 11.4176 3.33095 11.8686C3.65342 12.3184 4.32349 12.8121 5.64353 13.0323C6.13166 13.1137 6.48757 13.5392 6.48182 14.0344C6.47607 14.5296 6.11037 14.9467 5.62048 15.0167C5.1188 15.0884 4.793 15.3732 4.60484 15.7874C4.40339 16.231 4.37273 16.8151 4.54922 17.345C4.7211 17.861 5.06489 18.2619 5.55656 18.4511C6.05021 18.6411 6.86015 18.6809 8.0733 18.129C8.42388 17.9695 8.83474 18.025 9.13063 18.2716C9.42652 18.5183 9.5552 18.9127 9.4618 19.2866C9.33788 19.7827 9.13324 20.9406 9.93058 20.9905C10.4816 21.0249 10.9938 20.6055 10.9967 20.0518L10.9967 20.0472V17.5292C10.9955 17.0498 10.8868 16.3459 10.6061 15.7998C10.3427 15.2872 10.0054 15.0268 9.49176 15.0268C8.93765 15.0268 8.48846 14.5773 8.48846 14.0227C8.48846 13.4682 8.93765 13.0186 9.49176 13.0186C10.0798 13.0186 10.5784 13.16 10.9967 13.3894V12.5088C10.9955 12.0294 10.8868 11.3255 10.6061 10.7794C10.3427 10.2668 10.0054 10.0064 9.49176 10.0064C8.93765 10.0064 8.48846 9.55688 8.48846 9.00234C8.48846 8.4478 8.93765 7.99826 9.49176 7.99826C10.0798 7.99826 10.5784 8.13957 10.9967 8.36902L10.9967 3.97532Z" fill="#0F0F0F"/>
+                                        </svg>
+                                </div>
+                                <h5 class="fw-bold"> Sync tech for profit </h5>
+                                <p>
+                                    Incorporating AI and automation, maximize your software investment's return while managing compliance risks
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="section-content pt-6" id="section3">
+                        <h2 class="fw-bold py-4">Solutions</h2>
+                        <h4> Cut Hybrid Cloud Expenses Efficiently</h4>
+                        <p>Through automation delivers remarkable results, reducing cloud costs by 33% and yielding a staggering 471% ROI in under half a year. This versatile platform seamlessly integrates with major cloud providers like IBM, Microsoft Azure,
+                            AWS, and Google Cloud. Carhartt Enhances Azure Cloud Efficiency with Turbonomic.</p>
+                        <img src="../../assets/images/Automation.jpg" class="py-6" style="width: 100%" alt="banner1" />
+                    </div>
+                    <hr>
+                    <div class="section-content pt-6" id="section4">
+                        <h3 class="fw-bold">Features</h3>
+                        <div class="grid-container my-5">
+                            <div class="grid-item">
+                                <h3 class="fw-bold">Accelerate CI/CD</h3>
+                                <p>Ensure developer efficiency and continuous deployment</p>
+                                <a class="no-underline" href="#">Learn More <i class="fas fa-file-pdf"></i></a>
+                            </div>
+                            <div class="grid-item">
+                                <h3 class="fw-bold">Cut though incident noise</h3>
+                                <p>Glean real-time understanding of component impact</p>
+                                <a class="no-underline" href="#">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="grid-item">
+                                <h3 class="fw-bold">Debug tools in development and production</h3>
+                                <p>Provide all teams observability and APM with monitoring software.</p>
+                                <a class="no-underline" href="#">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="grid-item">
+                                <h3 class="fw-bold">AI-powered insights</h3>
+                                <p>Employ apps that are dynamically resourced for performance and absorbing peak demands.</p>
+                                <a class="no-underline" href="#">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="grid-item">
+                                <h3 class="fw-bold">Increase IT productivity</h3>
+                                <h5 class="fw-bold">Automatically manage resources based on real-time demand</h5>
+                                <a class="no-underline" href="#">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="grid-item">
+                                <h3 class="fw-bold">Reduce business risk</h3>
+                                <h5 class="fw-bold">Avoid the cost of downtime and prevent performance degradation by driving continuous application health</h5>
+                                <a class="no-underline" href="#">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="section-content py-6" id="section5">
+                        <h2 class="fw-bold pb-4">Case Studies</h2>
+                        <div class="grid-container my-5">
+                            <div class="grid-item p-0 pointer url-content" data-url-content="abcd">
+                                <img class="w-100" src="../../assets/images/Automation.jpg" alt="banner">
+                                <div class="p-3">
+                                    <h3 class="fw-bold text-center">Lorem Ipsum</h3>
+                                    <p class="text-left m-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh praesent tristique magna sit amet. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque.
+                                    </p>
+                                    <a class="no-underline p-3 float-right" href="#"><i class="fas fa-arrow-right fa-2xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="grid-item p-0 pointer url-content" data-url-content="abcd">
+                                <img class="w-100" src="../../assets/images/Automation.jpg" alt="banner">
+                                <div class="p-3">
+                                    <h3 class="fw-bold text-center">Lorem Ipsum</h3>
+                                    <p class="text-left m-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh praesent tristique magna sit amet. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque.
+                                    </p>
+                                    <a class="no-underline p-3 float-right" href="#"><i class="fas fa-arrow-right fa-2xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="grid-item p-0 pointer url-content" data-url-content="abcd">
+                                <img class="w-100" src="../../assets/images/Automation.jpg" alt="banner">
+                                <div class="p-3">
+                                    <h3 class="fw-bold text-center">Lorem Ipsum</h3>
+                                    <p class="text-left m-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh praesent tristique magna sit amet. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque.
+                                    </p>
+                                    <a class="no-underline p-3 float-right" href="#"><i class="fas fa-arrow-right fa-2xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="grid-item p-0 pointer url-content" data-url-content="abcd">
+                                <img class="w-100" src="../../assets/images/Automation.jpg" alt="banner">
+                                <div class="p-3">
+                                    <h3 class="fw-bold text-center">Lorem Ipsum</h3>
+                                    <p class="text-left m-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh praesent tristique magna sit amet. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque.
+                                    </p>
+                                    <a class="no-underline p-3 float-right" href="#"><i class="fas fa-arrow-right fa-2xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="grid-item p-0 pointer url-content" data-url-content="abcd">
+                                <img class="w-100" src="../../assets/images/Automation.jpg" alt="banner">
+                                <div class="p-3">
+                                    <h3 class="fw-bold text-center">Lorem Ipsum</h3>
+                                    <p class="text-left m-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh praesent tristique magna sit amet. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque.
+                                    </p>
+                                    <a class="no-underline p-3 float-right" href="#"><i class="fas fa-arrow-right fa-2xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="grid-item p-0 pointer url-content" data-url-content="abcd">
+                                <img class="w-100" src="../../assets/images/Automation.jpg" alt="banner">
+                                <div class="p-3">
+                                    <h3 class="fw-bold text-center">Lorem Ipsum</h3>
+                                    <p class="text-left m-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh praesent tristique magna sit amet. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque.
+                                    </p>
+                                    <a class="no-underline p-3 float-right" href="#"><i class="fas fa-arrow-right fa-2xl"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="section-content py-6" id="section6">
+                        <h2 class="fw-bold">Resources</h2>
+                        <div class="grid-container my-5">
+                            <div class="grid-item p-0 pointer url-content py-5" data-url-content="abcd">
+                                <div class="p-3">
+                                    <span class="fw-bold text-center">Boosting FinTech & Green IT</span>
+                                    <h3 class="mb-5"> Maximize ROI & Eco-Friendliness </h3>
+                                    <p class="text-left m-3">
+                                        Unearth top tips for boosting business value and eco-efficiency in mixed cloud setups
+                                    </p>
+                                    <a class="no-underline p-3 float-right" href="#"><i class="fas fa-arrow-right fa-2xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="grid-item p-0 pointer url-content py-5" data-url-content="abcd">
+                                <div class="p-3">
+                                    <span class="fw-bold text-center">Boosting FinTech & Green IT</span>
+                                    <h3 class="mb-5"> What is FinOps? </h3>
+                                    <p class="text-left m-3">
+                                        Learn more about this evolving cloud financial management discipline that aims to enable organizations to optimize their business value in the cloud
+                                    </p>
+                                    <a class="no-underline p-3 float-right" href="#"><i class="fas fa-arrow-right fa-2xl"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="section-content py-10 next-step" id="section7">
+                        <div class="text-lg-start mt-4 mt-lg-0 px-5">
+                            <div class="mb-5">
+                                <h1 class="display-5 fw-bold text-white mb-3">
+                                    <span class="text-dark">Take The Next Step!</span>
+                                </h1>
+                            </div>
+                            <p class="pb-5">Discover more about cloud cost management solutions from Captiv and how automation can optimize business value in the cloud and unlock true cloud elasticity.</p>
+                            <a class="btn btn-primary hover-button-up m-2" href="#demo">Book Meeting</a>
+                            <a class="btn btn-outline-primary hover-button-up m-2" href="#">Start Trial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Search Box -->
+    <div id="search-modal" class="modal">
+        <div class="modal-content col-lg-8 col-md-10 col-sm-12">
+            <span class="close" id="close-modal-button">&times;</span>
+            <h4 class="fw-bold">Search Content</h4>
+            <input type="text" placeholder="Search..." id="search-input">
+            <div id="search-results">
+                <div class="no-results-message">No content available</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container px-0">
+
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-between p-4" style="background-color: #6351ce">
+                <!-- Left -->
+                <div class="me-5">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <!-- Left -->
+
+                <!-- Right -->
+                <div>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="footer-section">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <img src="../../assets/images/CAPTIV-LOGO.png" alt="Your Logo" height="64">
+                            <!-- <h6 class="text-uppercase fw-bold">Company name</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p> -->
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Products</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                <a href="#!" class="text-white">Products</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-white">Trialing</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-white">Services</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-white">Industries</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Useful links</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                <a href="#!" class="text-white">Your Account</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-white">Become an Affiliate</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-white">Shipping Rates</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-white">Help</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Contact</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                            <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <!-- <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2020 Copyright:
+                <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div> -->
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+
+    </div>
+    <!-- End of .container -->
+
+    <!-- Add your content here -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+
+</html>

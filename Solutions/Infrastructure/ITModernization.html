@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captiv</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="../../assets/css/style.css" rel="stylesheet">
+    <link href="../../assets/css/solutions.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="header fixed-top">
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <div class="navbar-left w-100 d-flex justify-content-between">
+                    <div class="navbar-left-side d-flex">
+                        <button class="navbar-toggler custom-toggler collapsed me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>
+                    </button>
+                        <a class="navbar-brand" href="/captiv/">
+                            <img src="../../assets/images/CAPTIV-LOGO.png" alt="Your Logo" height="32">
+                        </a>
+                    </div>
+                    <!-- <div class="navbar-right-side d-md-none d-flex align-items-center mx-2 search-icon">
+                        <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 32 32">
+                        <path d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z"></path>
+                    </svg>
+                    </div> -->
+                </div>
+
+                <!-- Navbar Links (Visible on larger screens) -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <!-- <li class="nav-item active">
+                            <a class="nav-link fw-bold" href="javascript:void(0);">Home</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="javascript:void(0);" id="toggleLink1">Solutions <i class="fas fa-caret-down"></i></a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link fw-bold" href="javascript:void(0);" id="toggleLink2">Services <i class="fas fa-caret-down"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="javascript:void(0);" id="toggleLink3">Research <i class="fas fa-caret-down"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="javascript:void(0);">About</a>
+                        </li> -->
+                    </ul>
+                </div>
+                <!-- <div class="d-none d-md-block mx-2 search-icon">
+                    <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 32 32">
+                    <path d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z"></path>
+                </svg>
+                </div> -->
+            </div>
+        </nav>
+        <!-- Solutions -->
+        <div id="contentContainer1" style="display: none;">
+            <div class="row">
+                <div class="col-auto col-lg-3 col-md-3 col-sm-4 col-xs-auto pe-0">
+                    <ul id="linkList1">
+                        <li><a href="javascript:void(0);" data-content="contentDisplay1" class="active">Automation</a></li>
+                        <li><a href="javascript:void(0);" data-content="contentDisplay2">Data & AI</a></li>
+                        <li><a href="javascript:void(0);" data-content="contentDisplay3">Industry</a></li>
+                        <li><a href="javascript:void(0);" data-content="contentDisplay4">Infrastructure</a></li>
+                        <li><a href="javascript:void(0);" data-content="contentDisplay5">Security</a></li>
+                        <li><a href="javascript:void(0);" data-content="contentDisplay6">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="col-auto col-lg-9 col-md-9 col-sm-8 col-xs-auto navbarInnerContainer1">
+                    <div class="contentDisplay active" id="contentDisplay1">
+                        <h4 class="my-2"><a href="Solutions/Automation" class="no-underline"> Automation <i class="fas fa-arrow-right"></i></a></h4>
+                        <span>Intellectual IT Support for your business growth</span>
+                        <div class="grid-container my-4">
+                            <div class="grid-item url-content" data-url-content="Solutions/Automation/Application-Performance-Management">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Application Performance Management</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Automation/Business-Automation">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Business automation</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Automation/Cloud-Cost-Management">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Cloud Cost Management</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Automation/Decision-Management">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Decision Management</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Automation/DevOps-Automation">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">DevOps Automation</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Automation/Integration">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Integration</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Automation/Workflow-Automation">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Workflow Automation</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentDisplay" id="contentDisplay2">
+                        <h4 class="my-2"><a href="Solutions/Data&AI" class="no-underline"> Data & AI <i class="fas fa-arrow-right"></i></a></h4>
+                        <span>Optimize your data strategy to support data-driven decisions</span>
+                        <div class="grid-container my-4">
+                            <div class="grid-item url-content" data-url-content="Solutions/Data&AI/Data-Lake">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Data Lake</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Data&AI/Data-Warehouse">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Data Warehouse</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Data&AI/Integration">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Integration</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentDisplay" id="contentDisplay3">
+                        <h4 class="my-2"><a href="Solutions/Industry" class="no-underline"> Industry <i class="fas fa-arrow-right"></i></a></h4>
+                        <span>Optimize your data strategy to support data-driven decisions</span>
+                        <div class="grid-container my-4">
+                            <div class="grid-item url-content" data-url-content="Solutions/Industry/Analytics">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Analytics</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Industry/Energy&Utilities">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Energy & Utilities</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Industry/Government">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Government</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Industry/Manufacturing">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Manufacturing</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentDisplay" id="contentDisplay4">
+                        <h4 class="my-2"><a href="Solutions/Infrastructure" class="no-underline"> Infrastructure <i class="fas fa-arrow-right"></i></a></h4>
+                        <span>Great Infrastructure Services with complete data protection</span>
+                        <div class="grid-container my-4">
+                            <div class="grid-item url-content" data-url-content="Solutions/Infrastructure/Backup&Recovery">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Backup & Recovery</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Infrastructure/HybridCloud">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Hybrid Cloud</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Infrastructure/ITModernization">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">IT Modernization</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentDisplay" id="contentDisplay5">
+                        <h4 class="my-2"><a href="Solutions/Security" class="no-underline"> Security <i class="fas fa-arrow-right"></i></a></h4>
+                        <span>Enterprise cybersecurity for today's hybrid cloud environments</span>
+                        <div class="grid-container my-4">
+                            <div class="grid-item url-content" data-url-content="Solutions/Security/CloudSecurity">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Cloud Security</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Security/Forensics">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Forensics</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Security/SecurityAutomation">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Security Automation</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Security/ZeroTrust">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Zero Trust</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentDisplay" id="contentDisplay6">
+                        <h4 class="my-2"><a href="Solutions/Sustainability" class="no-underline"> Sustainability <i class="fas fa-arrow-right"></i></a></h4>
+                        <span>Embed sustainability into your business transformation</span>
+                        <div class="grid-container my-4">
+                            <div class="grid-item url-content" data-url-content="Solutions/Sustainability/AssetManagement">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Asset Management</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item url-content" data-url-content="Solutions/Sustainability/SupplyChain">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">Supply Chain</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services -->
+        <div id="contentContainer2" style="display: none;">
+            <div class="row">
+                <div class="col-auto col-lg-3 col-md-3 col-sm-4 col-xs-auto">
+                    <ul id="linkList2">
+                        <li><a href="javascript:void(0);" data-content="contentDisplay1" class="active">Automation</a></li>
+                        <li><a href="javascript:void(0);" data-content="contentDisplay2">Data & AI</a></li>
+                        <li><a href="javascript:void(0);" data-content="contentDisplay3">Industry</a></li>
+                        <li><a href="javascript:void(0);" data-content="contentDisplay4">Infrastructure</a></li>
+                        <li><a href="javascript:void(0);" data-content="contentDisplay5">Security</a></li>
+                        <li><a href="javascript:void(0);" data-content="contentDisplay6">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="col-auto col-lg-9 col-md-9 col-sm-8 col-xs-auto navbarInnerContainer2">
+                    <div class="contentDisplay active" id="contentDisplay1">
+                        <h4 class="my-2">Automation</h4>
+                        <div class="grid-container my-4">
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentDisplay" id="contentDisplay2">
+                        <h2>Content sol</h2>
+                        <p>Content 2 goes here.</p>
+                    </div>
+                    <div class="contentDisplay" id="contentDisplay3">
+                        <h2>Content sol</h2>
+                        <p>Content 3 goes here.</p>
+                    </div>
+                    <div class="contentDisplay" id="contentDisplay4">
+                        <h2>Content sol</h2>
+                        <p>Content 4 goes here.</p>
+                    </div>
+                    <div class="contentDisplay" id="contentDisplay5">
+                        <h2>Content sol</h2>
+                        <p>Content 5 goes here.</p>
+                    </div>
+                    <div class="contentDisplay" id="contentDisplay6">
+                        <h2>Content sol</h2>
+                        <p>Content 6 goes here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Research -->
+        <div id="contentContainer3" style="display: none;">
+            <div class="row">
+                <div class="col-auto col-lg-3 col-md-3 col-sm-4 col-xs-auto">
+                    <ul id="linkList3">
+                        <li><a href="javascript:void(0);" data-content="contentDisplay1" class="active">Automation</a></li>
+                        <li><a href="javascript:void(0);" data-content="contentDisplay2">Data & AI</a></li>
+                        <li><a href="javascript:void(0);" data-content="contentDisplay3">Industry</a></li>
+                        <li><a href="javascript:void(0);" data-content="contentDisplay4">Infrastructure</a></li>
+                        <li><a href="javascript:void(0);" data-content="contentDisplay5">Security</a></li>
+                        <li><a href="javascript:void(0);" data-content="contentDisplay6">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="col-auto col-lg-9 col-md-9 col-sm-8 col-xs-auto navbarInnerContainer3">
+                    <div class="contentDisplay active" id="contentDisplay1">
+                        <h4 class="my-2"><a href="Automation" class="no-underline">Automation <i class="fas fa-arrow-right"></i></a></h4>
+                        <span>Intellectual IT Support for your business growth</span>
+                        <div class="grid-container my-4">
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <h6 class="fw-bold">AI Ops</h6>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentDisplay" id="contentDisplay2">
+                        <h2>Content sol</h2>
+                        <p>Content 2 goes here.</p>
+                    </div>
+                    <div class="contentDisplay" id="contentDisplay3">
+                        <h2>Content sol</h2>
+                        <p>Content 3 goes here.</p>
+                    </div>
+                    <div class="contentDisplay" id="contentDisplay4">
+                        <h2>Content sol</h2>
+                        <p>Content 4 goes here.</p>
+                    </div>
+                    <div class="contentDisplay" id="contentDisplay5">
+                        <h2>Content sol</h2>
+                        <p>Content 5 goes here.</p>
+                    </div>
+                    <div class="contentDisplay" id="contentDisplay6">
+                        <h2>Content sol</h2>
+                        <p>Content 6 goes here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="navbar-fill"></div>
+
+    <!-- Solutions Container -->
+    <div class="container main-container bg-black">
+        <!-- row -->
+        <div class="row justify-content-center py-5 mx-2">
+            <!-- hero content -->
+            <div class="col-md-9 col-lg-6 align-self-center pe-lg-5" data-aos="flip-up">
+                <div class="text-center text-lg-start mt-4 mt-lg-0">
+                    <div class="mb-3">
+                        <span class="badge bg-secondary rounded">New</span>
+                        <span class="text-white ms-1">Infrastructure</span>
+                    </div>
+                    <div class="mb-5">
+                        <h2 class="display-5 fw-bold text-white mb-3">
+                            <span>IT infrastructure modernization</span>
+                        </h2>
+                        <p class="lead text-white">Modernize applications, servers and storage in place – at your own pace – to integrate seamlessly with hybrid cloud and AI</p>
+                    </div>
+                    <a class="btn btn-primary hover-button-up m-2 trail-badge" href="#demo">Have a trail on this!</a>
+                </div>
+            </div>
+            <!-- hero image -->
+            <div class="col-md-9 col-lg-6 align-self-center">
+                <div class="px-3 px-sm-7 px-md-2 px-xl-7 mt-5 mt-lg-0 mb-n9 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <!--googleoff: index-->
+                    <img class="img-fluid" src="../../assets/images/Automation.jpg" alt="images title">
+                    <!--googleon: index-->
+                </div>
+            </div>
+        </div>
+        <!-- end row -->
+    </div>
+
+    <!-- Information Container -->
+    <div class="container information-container bg-light">
+        <div class="row justify-content-center d-flex py-5 mx-2">
+            <div class="col-md-4 col-lg-3 pe-lg-2 d-none d-md-block h-100 sticky-top information-link" data-bs-spy="scroll" data-bs-target="#list-container" data-offset="100">
+                <div class="list-container" id="list-container">
+                    <!-- <div class="active-bar"></div> -->
+                    <ul class="w-100">
+                        <li class="side-nav-item active" href="#section1">Overview</li>
+                        <li class="side-nav-item" href="#section2">Benefits</li>
+                        <li class="side-nav-item" href="#section3">Solutions</li>
+                        <li class="side-nav-item" href="#section4">Case Studies</li>
+                        <li class="side-nav-item" href="#section5">Next Steps</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-8 col-lg-9 align-self-center ps-lg-5 information-content">
+                <div class="scroll-content">
+                    <div class="section-content py-6" id="section1">
+                        <h2 class="fw-bold py-4">Overview</h2>
+                        <h4>Upgrading apps demands contemporary setup</h4>
+                        <p>Meeting customer demands and adapting to evolving IT trends prompt tech updates. No necessity for a complete overhaul of dependable systems and vital apps. Instead, modernize progressively by crafting cloud-native solutions and
+                            merging IBM Cloud® Paks containerized microservices into versatile, expandable, and safe mainframes, servers, and storage equipped with AI and suited for hybrid cloud use.</p>
+                        <img class="w-100" src="../../assets/images/Automation.jpg" alt="banner">
+                        <div class="pt-5"><a class="no-underline" href="#">Learn More <i class="fas fa-arrow-right"></i></a></div>
+                    </div>
+                    <hr/>
+                    <div class="section-content py-6" id="section2">
+                        <h2 class="fw-bold">Benefits</h2>
+                        <h4 class="py-4">Discover why 80% of leaders seek upgrades for staying competitive</h4>
+                        <div class="grid-container my-5">
+                            <div class="grid-item p-0 pointer url-content" data-url-content="abcd">
+                                <img class="w-100" src="../../assets/images/Automation.jpg" alt="banner">
+                                <div class="p-3">
+                                    <h3 class="fw-bold text-center"> Portability </h3>
+                                    <p class="text-left m-3">
+                                        Open systems boost reliability and uniformity while minimizing uncertainties
+                                    </p>
+                                    <a class="no-underline p-3 float-right" href="#"><i class="fas fa-arrow-right fa-2xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="grid-item p-0 pointer url-content" data-url-content="abcd">
+                                <img class="w-100" src="../../assets/images/Automation.jpg" alt="banner">
+                                <div class="p-3">
+                                    <h3 class="fw-bold text-center"> Adaptability </h3>
+                                    <p class="text-left m-3">
+                                        Adaptable, versatile tech setup handles changing needs at fixed expenses
+                                    </p>
+                                    <a class="no-underline p-3 float-right" href="#"><i class="fas fa-arrow-right fa-2xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="grid-item p-0 pointer url-content" data-url-content="abcd">
+                                <img class="w-100" src="../../assets/images/Automation.jpg" alt="banner">
+                                <div class="p-3">
+                                    <h3 class="fw-bold text-center"> Security </h3>
+                                    <p class="text-left m-3">
+                                        The ideal platform manages sensitive data storage, access, and processing efficiently
+                                    </p>
+                                    <a class="no-underline p-3 float-right" href="#"><i class="fas fa-arrow-right fa-2xl"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="section-content pt-6" id="section3">
+                        <h2 class="fw-bold py-4">Solutions</h2>
+                        <h4>MainFrame Modernization</h4>
+                        <div class="grid-container my-5">
+                            <div class="grid-item p-0 pointer url-content" data-url-content="abcd">
+                                <div class="p-3">
+                                    <h3 class="fw-bold text-center">Lorem Ipsum</h3>
+                                    <p class="text-left m-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh praesent tristique magna sit amet. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque.
+                                    </p>
+                                    <a class="no-underline p-3 float-right" href="#"><i class="fas fa-arrow-right fa-2xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="grid-item p-0 pointer url-content" data-url-content="abcd">
+                                <div class="p-3">
+                                    <h3 class="fw-bold text-center">Lorem Ipsum</h3>
+                                    <p class="text-left m-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh praesent tristique magna sit amet. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque.
+                                    </p>
+                                    <a class="no-underline p-3 float-right" href="#"><i class="fas fa-arrow-right fa-2xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="grid-item p-0 pointer url-content" data-url-content="abcd">
+                                <div class="p-3">
+                                    <h3 class="fw-bold text-center">Lorem Ipsum</h3>
+                                    <p class="text-left m-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh praesent tristique magna sit amet. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque.
+                                    </p>
+                                    <a class="no-underline p-3 float-right" href="#"><i class="fas fa-arrow-right fa-2xl"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <h4 class="pt-5">Server Modernization</h4>
+                        <div class="grid-container my-5">
+                            <div class="grid-item p-0 pointer url-content" data-url-content="abcd">
+                                <div class="p-3">
+                                    <h3 class="fw-bold text-center">Lorem Ipsum</h3>
+                                    <p class="text-left m-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh praesent tristique magna sit amet. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque.
+                                    </p>
+                                    <a class="no-underline p-3 float-right" href="#"><i class="fas fa-arrow-right fa-2xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="grid-item p-0 pointer url-content" data-url-content="abcd">
+                                <div class="p-3">
+                                    <h3 class="fw-bold text-center">Lorem Ipsum</h3>
+                                    <p class="text-left m-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh praesent tristique magna sit amet. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque.
+                                    </p>
+                                    <a class="no-underline p-3 float-right" href="#"><i class="fas fa-arrow-right fa-2xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="grid-item p-0 pointer url-content" data-url-content="abcd">
+                                <div class="p-3">
+                                    <h3 class="fw-bold text-center">Lorem Ipsum</h3>
+                                    <p class="text-left m-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh praesent tristique magna sit amet. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque.
+                                    </p>
+                                    <a class="no-underline p-3 float-right" href="#"><i class="fas fa-arrow-right fa-2xl"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <h4 class="pt-5">Storage Modernization</h4>
+                        <div class="grid-container my-5">
+                            <div class="grid-item p-0 pointer url-content" data-url-content="abcd">
+                                <div class="p-3">
+                                    <h3 class="fw-bold text-center">Lorem Ipsum</h3>
+                                    <p class="text-left m-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh praesent tristique magna sit amet. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque.
+                                    </p>
+                                    <a class="no-underline p-3 float-right" href="#"><i class="fas fa-arrow-right fa-2xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="grid-item p-0 pointer url-content" data-url-content="abcd">
+                                <div class="p-3">
+                                    <h3 class="fw-bold text-center">Lorem Ipsum</h3>
+                                    <p class="text-left m-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh praesent tristique magna sit amet. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque.
+                                    </p>
+                                    <a class="no-underline p-3 float-right" href="#"><i class="fas fa-arrow-right fa-2xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="grid-item p-0 pointer url-content" data-url-content="abcd">
+                                <div class="p-3">
+                                    <h3 class="fw-bold text-center">Lorem Ipsum</h3>
+                                    <p class="text-left m-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh praesent tristique magna sit amet. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque.
+                                    </p>
+                                    <a class="no-underline p-3 float-right" href="#"><i class="fas fa-arrow-right fa-2xl"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="section-content py-6" id="section4">
+                        <h2 class="fw-bold pb-4">Case Studies</h2>
+                        <div class="grid-container my-5">
+                            <div class="grid-item p-0 pointer url-content" data-url-content="abcd">
+                                <img class="w-100" src="../../assets/images/Automation.jpg" alt="banner">
+                                <div class="p-3">
+                                    <h3 class="fw-bold text-center">Lorem Ipsum</h3>
+                                    <p class="text-left m-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh praesent tristique magna sit amet. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque.
+                                    </p>
+                                    <a class="no-underline p-3 float-right" href="#"><i class="fas fa-arrow-right fa-2xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="grid-item p-0 pointer url-content" data-url-content="abcd">
+                                <img class="w-100" src="../../assets/images/Automation.jpg" alt="banner">
+                                <div class="p-3">
+                                    <h3 class="fw-bold text-center">Lorem Ipsum</h3>
+                                    <p class="text-left m-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh praesent tristique magna sit amet. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque.
+                                    </p>
+                                    <a class="no-underline p-3 float-right" href="#"><i class="fas fa-arrow-right fa-2xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="grid-item p-0 pointer url-content" data-url-content="abcd">
+                                <img class="w-100" src="../../assets/images/Automation.jpg" alt="banner">
+                                <div class="p-3">
+                                    <h3 class="fw-bold text-center">Lorem Ipsum</h3>
+                                    <p class="text-left m-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh praesent tristique magna sit amet. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque.
+                                    </p>
+                                    <a class="no-underline p-3 float-right" href="#"><i class="fas fa-arrow-right fa-2xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="grid-item p-0 pointer url-content" data-url-content="abcd">
+                                <img class="w-100" src="../../assets/images/Automation.jpg" alt="banner">
+                                <div class="p-3">
+                                    <h3 class="fw-bold text-center">Lorem Ipsum</h3>
+                                    <p class="text-left m-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh praesent tristique magna sit amet. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque.
+                                    </p>
+                                    <a class="no-underline p-3 float-right" href="#"><i class="fas fa-arrow-right fa-2xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="grid-item p-0 pointer url-content" data-url-content="abcd">
+                                <img class="w-100" src="../../assets/images/Automation.jpg" alt="banner">
+                                <div class="p-3">
+                                    <h3 class="fw-bold text-center">Lorem Ipsum</h3>
+                                    <p class="text-left m-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh praesent tristique magna sit amet. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque.
+                                    </p>
+                                    <a class="no-underline p-3 float-right" href="#"><i class="fas fa-arrow-right fa-2xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="grid-item p-0 pointer url-content" data-url-content="abcd">
+                                <img class="w-100" src="../../assets/images/Automation.jpg" alt="banner">
+                                <div class="p-3">
+                                    <h3 class="fw-bold text-center">Lorem Ipsum</h3>
+                                    <p class="text-left m-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh praesent tristique magna sit amet. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque.
+                                    </p>
+                                    <a class="no-underline p-3 float-right" href="#"><i class="fas fa-arrow-right fa-2xl"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="section-content py-10 next-step" id="section5">
+                        <div class="text-lg-start mt-4 mt-lg-0 px-5">
+                            <div class="mb-5">
+                                <h1 class="display-5 fw-bold text-white mb-3">
+                                    <span class="text-dark">Take The Next Step!</span>
+                                </h1>
+                            </div>
+                            <div class="grid-container my-5">
+                                <div class="grid-item p-0 pointer url-content" data-url-content="abcd">
+                                    <div class="p-3">
+                                        <h4 class="fw-bold text-center">On-premises infrastructure for hybrid cloud</h4>
+                                        <p class="text-left m-3">
+                                            Unlock Speedy Growth: Optimal IT Boosts Transformation!
+                                        </p>
+                                        <a class="no-underline p-3" href="#">Explore <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="grid-item p-0 pointer url-content" data-url-content="abcd">
+                                    <div class="p-3">
+                                        <h4 class="fw-bold text-center">CAPTIV Garage services</h4>
+                                        <p class="text-left m-3">
+                                            Apply strategy, design and technology to modernize for greater interoperability and ROI.
+                                        </p>
+                                        <a class="no-underline p-3 float-right" href="#">Explore <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Search Box -->
+    <div id="search-modal" class="modal">
+        <div class="modal-content col-lg-8 col-md-10 col-sm-12">
+            <span class="close" id="close-modal-button">&times;</span>
+            <h4 class="fw-bold">Search Content</h4>
+            <input type="text" placeholder="Search..." id="search-input">
+            <div id="search-results">
+                <div class="no-results-message">No content available</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container px-0">
+
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-between p-4" style="background-color: #6351ce">
+                <!-- Left -->
+                <div class="me-5">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <!-- Left -->
+
+                <!-- Right -->
+                <div>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="footer-section">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <img src="../../assets/images/CAPTIV-LOGO.png" alt="Your Logo" height="64">
+                            <!-- <h6 class="text-uppercase fw-bold">Company name</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p> -->
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Products</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                <a href="#!" class="text-white">Products</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-white">Trialing</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-white">Services</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-white">Industries</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Useful links</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                <a href="#!" class="text-white">Your Account</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-white">Become an Affiliate</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-white">Shipping Rates</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-white">Help</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Contact</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                            <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <!-- <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2020 Copyright:
+                <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div> -->
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+
+    </div>
+    <!-- End of .container -->
+
+    <!-- Add your content here -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+
+</html>
